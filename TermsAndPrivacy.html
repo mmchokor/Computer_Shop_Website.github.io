@@ -12,7 +12,7 @@
     <header class="main-header">
       <div class="container">
         <h1>
-          MSK
+          <a href="index.html">MSK</a>
           <img src="./images/LOGO1.png" width="50px" />
         </h1>
       </div>
@@ -22,27 +22,34 @@
     <nav class="nav-bar">
       <div class="navbar-container">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li>
-            <a
-              href="#"
-              style="float: right"
-              onclick="document.getElementById('signup-pop').style.display='block'"
-              >Register</a
-            >
-          </li>
-          <li style="float: right; padding-right: 18px">|</li>
-          <li>
-            <a
-              href="#"
-              style="float: right"
-              onclick="document.getElementById('loginpop').style.display='block'"
-            >
-              Login</a
-            >
-          </li>
+          <div class="navbar-flex">
+            <div class="navbar-flex-wrap">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </div>
+            <div class="navbar-flex-wrap">
+              <li>
+                <a
+                  id="register-pad"
+                  href="#"
+                  style="float: right"
+                  onclick="document.getElementById('signup-pop').style.display='block'"
+                  >Register</a
+                >
+              </li>
+              <li style="float: right; padding-right: 18px">|</li>
+              <li>
+                <a
+                  href="#"
+                  style="float: right"
+                  onclick="document.getElementById('loginpop').style.display='block'"
+                >
+                  Login</a
+                >
+              </li>
+            </div>
+          </div>
         </ul>
       </div>
     </nav>

@@ -41,6 +41,11 @@ body {
   padding-top: 5px;
 }
 
+.main-header a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .nav-bar {
   background-color: #333;
   color: #fff;
@@ -71,6 +76,26 @@ body {
 }
 .nav-bar a:hover{
   color: #ccc;
+}
+
+.navbar-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-flex-wrap {
+  flex: auto;
+}
+
+@media (max-width: 455px) {
+  .navbar-flex-wrap a{
+     padding-top: 5px;
+  }
+
+}
+
+#register-pad {
+  padding-right: 0px;
 }
 
 /* Slider ************************************************************* */

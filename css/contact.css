@@ -30,13 +30,8 @@ body {
    padding-bottom: 20px;
 }
 
-.info {
-   float: left;
-   width: 50%;
-}
-
-.contact-form input[type="text"], .contact-form input[type="email"]{
-   width: 95%;
+.contact-flex input[type="text"], .contact-form input[type="email"]{
+   width: 100%;
    background-color: #f4f4f4;
    border-color: rgb(192, 191, 191);
    border-top: 0;
@@ -48,6 +43,27 @@ body {
    font-size: 18px;
    color: #444;
 }
+
+.contact-flex {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2%;
+}
+
+.contact-flex-wrap {
+   flex: 30%;
+}
+
+@media (max-width: 748px) {
+   .contact-flex-wrap {
+     flex: 99%;
+   }
+
+   .contact-flex input[type="text"], .contact-form input[type="email"]{
+      margin-bottom: 15px;
+   }
+
+ }
 
 .contact-form input[type="text"]:hover, .contact-form input[type="email"]:hover{
    border-color: #3d155f;
