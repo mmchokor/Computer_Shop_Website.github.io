@@ -1,7 +1,71 @@
+hr {
+  background-color: #3d155f;
+  height: 1.5px;
+}
+
 .shop-container {
-  width: 90%;
   margin: auto;
+  padding: 0;
+  width: 90%;
   overflow: hidden;
+}
+
+.shop-container h1 {
+  padding: 0 0 0 7px;
+  margin-bottom: 8px;
+  margin-top: 25px;
+}
+
+.featured {
+  margin: 30px auto 0 auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(405px, 1fr));
+}
+.featured img {
+  width: 100%;
+}
+
+.text a {
+  background-color: #3d155f;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+
+.featured-builder {
+  position: relative;
+}
+.featured-builder:hover .builder {
+  opacity: 1;
+}
+.builder {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.featured-recommend {
+  position: relative;
+}
+.featured-recommend:hover .recommend {
+  opacity: 1;
+}
+.recommend {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .cards {
@@ -29,19 +93,27 @@
 }
 
 .product-name {
-   text-align: center;
-   font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .price {
-   text-align: center;
-   font-weight: bold;
-   color: #3d155f;
-   font-size: 1.1em;
+  text-align: center;
+  font-weight: bold;
+  color: #3d155f;
+  font-size: 1.1em;
+}
+
+.old-price {
+  margin-bottom: -18px;
+  text-align: center;
+  text-decoration: line-through;
+  color: #333;
+  font-size: 0.8em;
 }
 
 .buynow-button {
-   cursor: pointer;
+  cursor: pointer;
   background-color: #3d155f;
   width: 50%;
   float: left;
@@ -50,11 +122,11 @@
   border: none;
 }
 .buynow-button:hover {
-   opacity: 0.95;
+  opacity: 0.95;
 }
 .details-button {
-   cursor: pointer;
-   background-color: #333;
+  cursor: pointer;
+  background-color: #333;
   width: 50%;
   float: right;
   color: #fff;
@@ -62,5 +134,48 @@
   border: none;
 }
 .details-button:hover {
-   opacity: 0.95;
+  opacity: 0.95;
+}
+
+.builder-container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#cpu-info {
+  color: rgb(172, 170, 170);
+  font-weight: lighter;
+}
+
+.builder-label {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 2px;
+}
+
+.builder-select {
+  margin-bottom: 13px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .builder-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+}
+
+.builder-select {
+  text-align-last:center;
+  height:35px;
+  color: #444;
+  font-size: 16px;
+  border: 0;
+}
+
+.builder-select option{
+  font-size: 1.3em;
 }
