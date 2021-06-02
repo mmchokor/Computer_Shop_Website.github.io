@@ -1,0 +1,181 @@
+body {
+  font-size: 17px;
+  background-color: #f4f4f4;
+  color: #444444; /* #555 */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Hayde machen scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3d155f;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #441e64; 
+}
+
+.checkout {
+  padding: 8px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.main-header {
+  background-color: #3d155f; /*rgb(76, 0, 175)*/
+  color: whitesmoke;
+  image-rendering: right;
+}
+
+.main-header img {
+  float: right;
+  margin-top: -15px;
+  padding-top: 0;
+  vertical-align: middle;
+}
+.main-header h1 {
+  padding-top: 5px;
+}
+
+.main-header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #3d155f;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+a {
+  color: #2196f3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.main-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2px;
+  margin-top: 30px;
+}
+.main-footer-thankyou {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+.main-footer p {
+  width: 95%;
+  text-align: center;
+}
+
+/* Thank you css part */
+
+.thank {
+  font-size: xx-large;
+  margin: 12% auto;
+  text-align: center;
+  vertical-align: center;
+  padding: 0 20px;
+}

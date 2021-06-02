@@ -8,6 +8,25 @@ body {
   padding: 0;
 }
 
+/*Hayde machen scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3d155f;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #441e64; 
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -101,7 +120,7 @@ body {
 /* Slider ************************************************************* */
 
 .slideshow-container {
-  max-width: auto;
+  max-width: 1100px;
   position: relative;
   margin: auto;
   width: 100%;

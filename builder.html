@@ -188,113 +188,135 @@
 
     <!--Selector forum for the builder-->
     <div class="builder-container">
-      <br><br>
-      <form>
+      <br /><br />
+      <form
+        action="http://localhost/Project_CMPS246/checkout_custom.php"
+        method="POST"
+      >
         <!-- Selector for the cpu -->
         <label for="cpu" class="builder-label"
-          >CPU <span id="cpu-info">(All CPU are the latest generation)</span></label
-        ><br>
+          >CPU
+          <span id="cpu-info">(All CPU are the latest generation)</span></label
+        ><br />
         <select name="cpu" class="builder-select">
-          <option value="" disabled selected hidden>Select a CPU</option>
-          <option value="142">Intel Core I3</option>
-          <option value="215">Intel Core I5</option>
-          <option value="430">Intel Core I7</option>
-          <option value="505">Intel Core I9</option>
-          <option value="130">AMD Ryzen 3</option>
-          <option value="250">AMD Ryzen 5</option>
-          <option value="330">AMD Ryzen 7</option>
-          <option value="500">AMD Ryzen 9</option>
-        </select><br>
+          <option value="0" disabled selected hidden>Select a CPU</option>
+          <option value="142">Intel Core I3 - $142</option>
+          <option value="215">Intel Core I5 - $215</option>
+          <option value="430">Intel Core I7 - $430</option>
+          <option value="505">Intel Core I9 - $505</option>
+          <option value="130">AMD Ryzen 3 - $130</option>
+          <option value="250">AMD Ryzen 5 - $250</option>
+          <option value="330">AMD Ryzen 7 - $330</option>
+          <option value="500">AMD Ryzen 9 - $500</option></select
+        ><br />
 
         <!-- Selector for the gpu -->
         <label for="gpu" class="builder-label">GPU</label>
-        <br>
+        <br />
         <select name="gpu" class="builder-select">
-          <option value="" disabled selected hidden>Select a GPU</option>
-          <option value="1375">RTX3060Ti</option>
-          <option value="2000">RTX3070</option>
-          <option value="2700">RTX3080</option>
-          <option value="3499.99">RTX3090</option>
-          <option value="769.99">GTX1660Ti</option>
-          <option value="1999.99">RX6800</option>
-          <option value="2999.99">RX6900</option>
-          <option value="999.9">Rtx4000</option>
-        </select><br>
+          <option value="0" disabled selected hidden>Select a GPU</option>
+          <option value="1375">RTX3060Ti - $1375</option>
+          <option value="2000">RTX3070 - $2000</option>
+          <option value="2700">RTX3080 - $2700</option>
+          <option value="3499.99">RTX3090 - $3499.99</option>
+          <option value="769.99">GTX1660Ti - $767.99</option>
+          <option value="1999.99">RX6800 - $1999.99</option>
+          <option value="2999.99">RX6900 - $2999.99</option>
+          <option value="999.9">Rtx4000 - $999.9</option></select
+        ><br />
 
         <!-- Selector for the motherboard -->
-        <label for="motherboard" class="builder-label">Motherboard</label><br>
+        <label for="motherboard" class="builder-label">Motherboard</label><br />
         <select name="motherboard" class="builder-select">
-          <option value="" disabled selected hidden>Select a Motherboard</option>
-          <option value="65">Gigabyte H310M LGA1151</option>
-          <option value="100">MSI B360M LGA1151</option>
-          <option value="280">Asus ROG STRIX Z390-F LGA1151</option>
-          <option value="375">Asus ROG Maximus IX Formula LGA1151</option>
-          <option value="55">Gigabyte GA-A320M AMD</option>
-          <option value="140">Asus Prime B550M-K AMD</option>
-          <option value="230">MSI X570 Gaming Plus AMD-Ryzen-AM4</option>
-        </select><br>
+          <option value="0" disabled selected hidden>
+            Select a Motherboard
+          </option>
+          <option value="65">Gigabyte H310M LGA1151 - $65</option>
+          <option value="100">MSI B360M LGA1151 - $100</option>
+          <option value="280">Asus ROG STRIX Z390-F LGA1151 - $280</option>
+          <option value="375">Asus ROG Maximus IX Formula LGA1151 - $375</option>
+          <option value="55">Gigabyte GA-A320M AMD - $55</option>
+          <option value="140">Asus Prime B550M-K AMD - $140</option>
+          <option value="230">
+            MSI X570 Gaming Plus AMD-Ryzen-AM4 - $230
+          </option></select
+        ><br />
 
         <!-- Selector for the RAM -->
-        <label for="memory" class="builder-label">Select a Memory</label><br>
+        <label for="memory" class="builder-label">Select a Memory</label><br />
         <select name="memory" class="builder-select">
-          <option value="" disabled selected hidden>Memory</option>
-          <option value="25">2GB RAM</option>
-          <option value="35">4GB RAM</option>
-          <option value="62">8GB RAM</option>
-          <option value="94">16GB RAM</option>
-          <option value="150">32GB RAM</option>
-          <option value="350">64GB RAM</option>
-        </select><br>
+          <option value="0" disabled selected hidden>Memory</option>
+          <option value="25">2GB RAM - $25</option>
+          <option value="35">4GB RAM - $35</option>
+          <option value="62">8GB RAM - $62</option>
+          <option value="94">16GB RAM - $94</option>
+          <option value="150">32GB RAM - $150</option>
+          <option value="350">64GB RAM - $350</option></select
+        ><br />
 
         <!-- Selector for the storage -->
         <label for="storage" class="builder-label">Storage</label>
-        <br>
+        <br />
         <select name="storage" class="builder-select">
-          <option value="" disabled selected hidden>Select a Storage</option>
-          <option value="46">Seagate 1TB 5400RPM HDD</option>
-          <option value="79">Seagate 2TB 5400RPM HDD</option>
-          <option value="156">Seagate 4TB HDD</option>
-          <option value="200">Seagate 6TB HDD</option>
-          <option value="34">HP S700 250GB Solid State Drive</option>
-          <option value="88">HP EX920 512GB PCIe M.2 NVMe SSD</option>
-          <option value="124">HP EX900 1TB PCIe M.2 NVMe SSD</option>
-        </select><br>
+          <option value="0" disabled selected hidden>Select a Storage</option>
+          <option value="46">Seagate 1TB 5400RPM HDD - $46</option>
+          <option value="79">Seagate 2TB 5400RPM HDD - $79</option>
+          <option value="156">Seagate 4TB HDD - $156</option>
+          <option value="200">Seagate 6TB HDD - $200</option>
+          <option value="34">HP S700 250GB Solid State Drive - $34</option>
+          <option value="88">HP EX920 512GB PCIe M.2 NVMe SSD - $88</option>
+          <option value="124">HP EX900 1TB PCIe M.2 NVMe SSD - $124</option></select
+        ><br />
 
         <!-- Selector for the power supply -->
-        <label for="power-supply" class="builder-label">Select a Power Supply</label><br>
+        <label for="power_supply" class="builder-label"
+          >Select a Power Supply</label
+        ><br />
         <select name="power-supply" class="builder-select">
-          <option value="" disabled selected hidden>Select a PSU</option>
-          <option value="39.98">EVGA 450 W</option>
-          <option value="54.99">EVGA B5 550 W</option>
-          <option value="52.98">EVGS BQ 600 W</option>
-          <option value="73.98">EVGA BR 700 W</option>
-          <option value="120.80">EVGA B5 800 W</option>
-        </select><br>
+          <option value="0" disabled selected hidden>Select a PSU</option>
+          <option value="39.98">EVGA 450 W - $39.98</option>
+          <option value="54.99">EVGA B5 550 W - $54.99</option>
+          <option value="52.98">EVGS BQ 600 W - $52.98</option>
+          <option value="73.98">EVGA BR 700 W - $73.98</option>
+          <option value="120.80">EVGA B5 800 W - $120.80</option></select
+        ><br />
 
         <!-- Selector for the case -->
         <label for="case" class="builder-label">Case</label>
-        <br>
+        <br />
         <select name="case" class="builder-select">
-          <option value="" disabled selected hidden>Select a Case</option>
-          <option value="35">Aerocool Playa Slim RGB Case</option>
-          <option value="50">Aerocool SI-5200 RGB w/ Full Window</option>
-          <option value="69">Aerocool Tor RGB Lighting w/ Tempered Glass Full Window</option>
-          <option value="85">NZXT H510 Mid-Tower Case Matte Black/Red with Tempered Glass</option>
-          <option value="105">ThermalTake CA-1H8-00M1WN-01 View 31 RGB Chassis</option>
-          <option value="135">ThermalTake CA-1E8-00M1WN-00 Core X5 Chassis</option>
-          <option value="180">NZXT H510 Elite Premium Compact Mid-tower Matte Black ATX Case</option>
-          <option value="382">ThermalTake CA-1J9-00F9WN-00 Level 20 Tempered Glass Edition</option>
-        </select><br>
-        <br>
+          <option value="0" disabled selected hidden>Select a Case</option>
+          <option value="35">Aerocool Playa Slim RGB Case - $35</option>
+          <option value="50">Aerocool SI-5200 RGB w/ Full Window - $50</option>
+          <option value="69">
+            Aerocool Tor RGB Lighting w/ Tempered Glass Full Window - $69
+          </option>
+          <option value="85">
+            NZXT H510 Mid-Tower Case Matte Black/Red with Tempered Glass - $85
+          </option>
+          <option value="105">
+            ThermalTake CA-1H8-00M1WN-01 View 31 RGB Chassis - $105
+          </option>
+          <option value="135">
+            ThermalTake CA-1E8-00M1WN-00 Core X5 Chassis - $135
+          </option>
+          <option value="180">
+            NZXT H510 Elite Premium Compact Mid-tower Matte Black ATX Case - $180
+          </option>
+          <option value="382">
+            ThermalTake CA-1J9-00F9WN-00 Level 20 Tempered Glass Edition - $382
+          </option></select
+        ><br />
+        <br />
 
-        <input type="checkbox" name="building" value="50" id="">
+        <input type="checkbox" name="building" value="50" />
         <label for="building"> 50$ for us to build it instore.</label>
-        <br><br>
+        <br /><br />
 
-        <button type="submit" id="builder-button"> BUY</button>
+        <input type="hidden" name="prod_name" value="Custom Built PC" />
 
+        <button type="submit" id="buybutton">BUY</button>
       </form>
-
     </div>
 
     <!--Footer-->
