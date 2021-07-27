@@ -9,22 +9,14 @@
 
 <body>
   <?php
-    $prod_name = $_POST["prod_name"];
-    $cpu = $_POST["cpu"];
-	$gpu = $_POST["gpu"];
-	$motherboard = $_POST["motherboard"];
-	$memory = $_POST["memory"];
-	$storage = $_POST["storage"];
-	$power_supply = $_POST["power-supply"];
-	$case = $_POST["case"];
-	$building = $_POST["building"];
-	$prod_price = $cpu + $gpu + $motherboard + $memory + $storage + $power_supply + $case + $building; 
+  $prod_name = $_POST["prod_name"];
+  $prod_price = $_POST["prod_price"];
   ?>
   <!-- The top header -->
   <header class="main-header">
     <div class="container">
       <h1>
-        <a href="index.html">MSK</a>
+        <a href="../index.html">MSK</a>
         <img src="./LOGO1.png" width="50px" />
       </h1>
     </div>
@@ -97,9 +89,9 @@
       <div class="col-25">
         <div class="container">
           <h4>Cart <span class="price" style="color:black"></h4>
-          <p><?php echo $prod_name?><span class="price">$<?php echo $prod_price?></span></p>
+          <p><?php echo $prod_name ?><span class="price">$<?php echo $prod_price ?></span></p>
           <hr>
-          <p>Total <span class="price" style="color:black"><b>$<?php echo $prod_price?></b></span></p>
+          <p>Total <span class="price" style="color:black"><b>$<?php echo $prod_price ?></b></span></p>
         </div>
       </div>
     </div>
@@ -108,8 +100,7 @@
 
   <footer class="main-footer">
     <p>
-      Copyright &copy; 2021 MSK - Made by Mohamed Chokor, Khaled Abdul Samad,
-      Shireen Al Sabea
+      Copyright &copy; 2021 MSK - Made by Mohamed-Hammoud Ahmed Chokor
     </p>
   </footer>
 
